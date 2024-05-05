@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-6</title>
+
+    <style>
+        h1{
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        h2{
+            margin-left: 20px;
+        }
+        .ans{
+            margin-left: 50px;
+            text-align: center;
+            justify-content: left;
+            color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Task-6</h1>
+    <h2>Q6: 
+        Write a JavaScript program to remove a character at the specified <br>
+        position in a given string and return the modified string <br>
+    </h2> 
+
+    <script>
+      var str = prompt("Enter String value:")
+      var remove = Number(prompt("Remove a character at the specified index in a given string:")) 
+
+      if(remove < 0 || remove >= str.length){
+        alert(`Invalid index`)
+      }else{
+        var result = str.slice(0,remove) + str.slice(remove+1,)
+    }
+    
+    document.write(`<h1 class="ans">Original String: ${str} </h1>`);
+    document.write(`<h1 class="ans">Modified String: ${result} </h1>`);
+
+
+    </script>
+</body>
+</html>
